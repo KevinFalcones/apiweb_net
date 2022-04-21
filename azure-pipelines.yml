@@ -27,7 +27,11 @@ steps:
     command: test
     projects: '$(Parameters.TestProjects)'
     arguments: '--configuration $(BuildConfiguration)'
-  enabled: false
+
+- task: UseDotNet@2
+  displayName: 'Use .NET Core sdk version'
+  inputs:
+    version: 3.1.416
 
 - task: DotNetCoreCLI@2
   displayName: Publish
@@ -36,7 +40,7 @@ steps:
     publishWebProjects: false
     projects: '$(Parameters.RestoreBuildProjects)'
     arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
-    zipAfterPublish: True
+    zipAfterPublish: false
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
