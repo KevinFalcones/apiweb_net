@@ -23,6 +23,10 @@ namespace API.Controllers
             _configuration = configuration;
         }
 
+        public MathController()
+        {
+        }
+
         public IActionResult Index()
         {
             return new OkObjectResult("Math Controller: Add(value1, value2), Substract(value1,value2), Multiply(value1, value2), Divide(value1, value2)");
