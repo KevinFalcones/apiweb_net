@@ -32,24 +32,24 @@ namespace apiweb_net_test
         public void Add_ReturnsErrResult()
         {
             // Arrange
-            var testValue1 = 1;
-            var testValue2 = 2;
+            decimal testValue1 = 1;
+            decimal testValue2 = 2;
 
             // Act
-            var errResult = API.Math.Add(testValue1, testValue2);
+            decimal errResult = API.Math.Add(testValue1, testValue2);
 
             // Assert
             Assert.NotEqual(0, errResult);
         }
 
         [Theory]
-        [InlineData(2, 3, -1)]
-        [InlineData(-4, -6, 2)]
-        //[InlineData(-1, 2, 3)]
-        public void Substract_ReturnsOkResult(int testValue1, int testValue2, int expectedResult)
+        [InlineData(2.5, 3.5, -1.0)]
+        [InlineData(-4.5, -6.5, 2.0)]
+        //[InlineData(-1.5, 2.5, 3.0)]
+        public void Substract_ReturnsOkResult(decimal testValue1, decimal testValue2, decimal expectedResult)
         {
             // Act
-            var okResult = API.Math.Substract(testValue1, testValue2);
+            decimal okResult = API.Math.Substract(testValue1, testValue2);
 
             // Assert
             Assert.Equal(expectedResult, okResult);
@@ -59,11 +59,11 @@ namespace apiweb_net_test
         public void Substract_ReturnsErrResult()
         {
             // Arrange
-            var testValue1 = 1;
-            var testValue2 = 2;
+            decimal testValue1 = 1;
+            decimal testValue2 = 2;
 
             // Act
-            var errResult = API.Math.Substract(testValue1, testValue2);
+            decimal errResult = API.Math.Substract(testValue1, testValue2);
 
             // Assert
             Assert.NotEqual(1, errResult);
@@ -73,11 +73,11 @@ namespace apiweb_net_test
         public void Multiply_ResultTwo_ReturnsOkResult()
         {
             // Arrange
-            var testValue1 = 1;
-            var testValue2 = 2;
+            decimal testValue1 = 1;
+            decimal testValue2 = 2;
 
             // Act
-            var okResult = API.Math.Multiply(testValue2, testValue1);
+            decimal okResult = API.Math.Multiply(testValue2, testValue1);
 
             // Assert
             Assert.Equal(2, okResult);
@@ -87,11 +87,11 @@ namespace apiweb_net_test
         public void Divide_ResultMiddle_ReturnsOkResult()
         {
             // Arrange
-            var testValue1 = 1;
-            var testValue2 = 2;
+            decimal testValue1 = 1;
+            decimal testValue2 = 2;
 
             // Act
-            var okResult = API.Math.Divide(testValue1, testValue2);
+            decimal okResult = API.Math.Divide(testValue1, testValue2);
 
             // Assert
             Assert.Equal((double)0.5, (double)okResult);

@@ -40,7 +40,6 @@ steps:
     publishWebProjects: false
     projects: '$(Parameters.RestoreBuildProjects)'
     arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
-    zipAfterPublish: false
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
