@@ -1,0 +1,5 @@
+Build started...
+1>------ Build started: Project: apiweb_net_test, Configuration: Debug Any CPU ------
+1>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+1>apiweb_net_test -> C:\Users\johvi\Documents\GIT\AzureNet\apiweb_net\apiweb_net_test\bin\Debug\netcoreapp3.1\apiweb_net_test.dll
+========== Build: 1 succeeded, 0 failed, 2 up-to-date, 0 skipped ==========

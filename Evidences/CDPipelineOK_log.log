@@ -1,0 +1,219 @@
+2022-04-22T06:19:54.8064583Z ##[section]Starting: Run on agent
+2022-04-22T06:19:56.5676884Z ##[section]Starting: Initialize job
+2022-04-22T06:19:56.5679000Z Agent name: 'Hosted Agent'
+2022-04-22T06:19:56.5679537Z Agent machine name: 'WIN-8KKJTIFV6GC'
+2022-04-22T06:19:56.5679794Z Current agent version: '2.202.1'
+2022-04-22T06:19:56.5760811Z ##[group]Operating System
+2022-04-22T06:19:56.5761154Z Microsoft Windows Server 2019
+2022-04-22T06:19:56.5761349Z 10.0.17763
+2022-04-22T06:19:56.5761521Z Datacenter
+2022-04-22T06:19:56.5761682Z ##[endgroup]
+2022-04-22T06:19:56.5761863Z ##[group]Virtual Environment
+2022-04-22T06:19:56.5762162Z Environment: windows-2019
+2022-04-22T06:19:56.5762362Z Version: 20220410.1
+2022-04-22T06:19:56.5762754Z Included Software: https://github.com/actions/virtual-environments/blob/win19/20220410.1/images/win/Windows2019-Readme.md
+2022-04-22T06:19:56.5764749Z Image Release: https://github.com/actions/virtual-environments/releases/tag/win19%2F20220410.1
+2022-04-22T06:19:56.5765082Z ##[endgroup]
+2022-04-22T06:19:56.5765596Z ##[group]Virtual Environment Provisioner
+2022-04-22T06:19:56.5765838Z 1.0.0.0-main-20220406-1
+2022-04-22T06:19:56.5766020Z ##[endgroup]
+2022-04-22T06:19:56.5767170Z Current image version: '20220410.1'
+2022-04-22T06:19:56.5776510Z Agent running as: 'VssAdministrator'
+2022-04-22T06:19:56.5787833Z Prepare release directory.
+2022-04-22T06:19:56.5798049Z ReleaseId=2, TeamProjectId=40af192c-0a5e-417e-9c29-98154b370a49, ReleaseDefinitionName=CD_DeployToAzureAppServices
+2022-04-22T06:19:56.5973263Z Release folder: D:\a\r1\a
+2022-04-22T06:19:56.6156830Z Environment variables available are below.  Note that these environment variables can be referred to in the task (in the ReleaseDefinition) by replacing "_" with "." e.g. AGENT_NAME environment variable can be referenced using Agent.Name in the ReleaseDefinition: 
+				[AGENT_DISABLELOGPLUGIN_TESTFILEPUBLISHERPLUGIN] --> [true]
+				[AGENT_DISABLELOGPLUGIN_TESTRESULTLOGPLUGIN] --> [true]
+				[AGENT_HOMEDIRECTORY] --> [C:\agents\2.202.1]
+				[AGENT_ID] --> [8]
+				[AGENT_JOBNAME] --> [Run on agent]
+				[AGENT_MACHINENAME] --> [WIN-8KKJTIFV6GC]
+				[AGENT_NAME] --> [Hosted Agent]
+				[AGENT_OS] --> [Windows_NT]
+				[AGENT_OSARCHITECTURE] --> [X64]
+				[AGENT_RELEASEDIRECTORY] --> [D:\a\r1\a]
+				[AGENT_RETAINDEFAULTENCODING] --> [false]
+				[AGENT_ROOTDIRECTORY] --> [D:\a]
+				[AGENT_SERVEROMDIRECTORY] --> [C:\agents\2.202.1\externals\vstsom]
+				[AGENT_TASKRESTRICTIONSENFORCEMENTMODE] --> [Enabled]
+				[AGENT_TEMPDIRECTORY] --> [D:\a\_temp]
+				[AGENT_TOOLSDIRECTORY] --> [C:\hostedtoolcache\windows]
+				[AGENT_VERSION] --> [2.202.1]
+				[AGENT_WORKFOLDER] --> [D:\a]
+				[AZURE_HTTP_USER_AGENT] --> [VSTS_b68fa0a2-f6b3-4dd7-a3fc-6799f713ede8_Release__2_2_1]
+				[BUILD_BUILDID] --> [33]
+				[BUILD_BUILDNUMBER] --> [20220422.1]
+				[BUILD_BUILDURI] --> [vstfs:///Build/Build/33]
+				[BUILD_DEFINITIONID] --> [2]
+				[BUILD_DEFINITIONNAME] --> [AspNetCore-App-CI]
+				[BUILD_PROJECTID] --> [40af192c-0a5e-417e-9c29-98154b370a49]
+				[BUILD_PROJECTNAME] --> [DevOps]
+				[BUILD_REPOSITORY_ID] --> [KevinFalcones/apiweb_net]
+				[BUILD_REPOSITORY_NAME] --> [KevinFalcones/apiweb_net]
+				[BUILD_REPOSITORY_PROVIDER] --> [GitHub]
+				[BUILD_REQUESTEDFOR] --> [Johnny Kevin Falcones Jimenez]
+				[BUILD_REQUESTEDFORID] --> [8eeca814-dee6-6c2f-98c1-e8f2c9a1fe93]
+				[BUILD_SOURCEBRANCH] --> [refs/heads/test]
+				[BUILD_SOURCEBRANCHNAME] --> [test]
+				[BUILD_SOURCEVERSION] --> [dbcfdfd5ac28950a8032719cc7a650afc1e69521]
+				[BUILD_TYPE] --> [Build]
+				[GIT_TERMINAL_PROMPT] --> [0]
+				[MSDEPLOY_HTTP_USER_AGENT] --> [VSTS_b68fa0a2-f6b3-4dd7-a3fc-6799f713ede8_Release__2_2_1]
+				[PARAMETERS_CONNECTEDSERVICENAME] --> [ee84f27f-9472-4bd3-be2d-a2e736f5d6ae]
+				[PARAMETERS_DOCKERNAMESPACE] --> []
+				[PARAMETERS_DOCKERREPOSITORY] --> []
+				[PARAMETERS_STARTUPCOMMAND] --> []
+				[PARAMETERS_WEBAPPKIND] --> [webApp]
+				[PARAMETERS_WEBAPPNAME] --> [InterviewDevOpsDEV]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_BUILDID] --> [33]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_BUILDNUMBER] --> [20220422.1]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_BUILDURI] --> [vstfs:///Build/Build/33]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_DEFINITIONID] --> [2]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_DEFINITIONNAME] --> [AspNetCore-App-CI]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_PROJECTID] --> [40af192c-0a5e-417e-9c29-98154b370a49]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_PROJECTNAME] --> [DevOps]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_REPOSITORY_ID] --> [KevinFalcones/apiweb_net]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_REPOSITORY_NAME] --> [KevinFalcones/apiweb_net]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_REPOSITORY_PROVIDER] --> [GitHub]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_REQUESTEDFOR] --> [Johnny Kevin Falcones Jimenez]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_REQUESTEDFORID] --> [8eeca814-dee6-6c2f-98c1-e8f2c9a1fe93]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_SOURCEBRANCH] --> [refs/heads/test]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_SOURCEBRANCHNAME] --> [test]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_SOURCEVERSION] --> [dbcfdfd5ac28950a8032719cc7a650afc1e69521]
+				[RELEASE_ARTIFACTS__ASPNETCORE-APP-CI_TYPE] --> [Build]
+				[RELEASE_ATTEMPTNUMBER] --> [1]
+				[RELEASE_DEFINITIONENVIRONMENTID] --> [1]
+				[RELEASE_DEFINITIONID] --> [1]
+				[RELEASE_DEFINITIONNAME] --> [CD_DeployToAzureAppServices]
+				[RELEASE_DEPLOYMENT_REQUESTEDFOR] --> [Johnny Kevin Falcones Jimenez]
+				[RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL] --> [johnnykevin.falcones003@comunidadunir.net]
+				[RELEASE_DEPLOYMENT_REQUESTEDFORID] --> [8eeca814-dee6-6c2f-98c1-e8f2c9a1fe93]
+				[RELEASE_DEPLOYMENT_STARTTIME] --> [2022-04-22 06:19:32Z]
+				[RELEASE_DEPLOYMENTID] --> [2]
+				[RELEASE_DEPLOYPHASEID] --> [2]
+				[RELEASE_ENVIRONMENTID] --> [2]
+				[RELEASE_ENVIRONMENTNAME] --> [Deploy env DEV]
+				[RELEASE_ENVIRONMENTS_DEPLOY_ENV_DEV_STATUS] --> [InProgress]
+				[RELEASE_ENVIRONMENTURI] --> [vstfs:///ReleaseManagement/Environment/2]
+				[RELEASE_PRIMARYARTIFACTSOURCEALIAS] --> [_AspNetCore-App-CI]
+				[RELEASE_REASON] --> [Manual]
+				[RELEASE_RELEASEDESCRIPTION] --> []
+				[RELEASE_RELEASEID] --> [2]
+				[RELEASE_RELEASENAME] --> [Release-2]
+				[RELEASE_RELEASEURI] --> [vstfs:///ReleaseManagement/Release/2]
+				[RELEASE_RELEASEWEBURL] --> [https://dev.azure.com/johnnykevinfalcones/40af192c-0a5e-417e-9c29-98154b370a49/_release?releaseId=2&_a=release-summary]
+				[RELEASE_REQUESTEDFOR] --> [Johnny Kevin Falcones Jimenez]
+				[RELEASE_REQUESTEDFOREMAIL] --> [johnnykevin.falcones003@comunidadunir.net]
+				[RELEASE_REQUESTEDFORID] --> [8eeca814-dee6-6c2f-98c1-e8f2c9a1fe93]
+				[RELEASE_SKIPARTIFACTSDOWNLOAD] --> [False]
+				[RELEASE_TRIGGERINGARTIFACT_ALIAS] --> []
+				[REQUESTEDFORID] --> [8eeca814-dee6-6c2f-98c1-e8f2c9a1fe93]
+				[SYSTEM] --> [release]
+				[SYSTEM_ARTIFACTSDIRECTORY] --> [D:\a\r1\a]
+				[SYSTEM_COLLECTIONID] --> [b68fa0a2-f6b3-4dd7-a3fc-6799f713ede8]
+				[SYSTEM_COLLECTIONURI] --> [https://vsrm.dev.azure.com/johnnykevinfalcones/]
+				[SYSTEM_CULTURE] --> [en-US]
+				[SYSTEM_DEFAULTWORKINGDIRECTORY] --> [D:\a\r1\a]
+				[SYSTEM_DEFINITIONID] --> [1]
+				[SYSTEM_DEFINITIONNAME] --> [CD_DeployToAzureAppServices]
+				[SYSTEM_ENABLEACCESSTOKEN] --> [False]
+				[SYSTEM_HOSTTYPE] --> [release]
+				[SYSTEM_ISSCHEDULED] --> [False]
+				[SYSTEM_JOBATTEMPT] --> [1]
+				[SYSTEM_JOBDISPLAYNAME] --> [Run on agent]
+				[SYSTEM_JOBID] --> [edc333cd-688c-524a-5571-d383ddad0f74]
+				[SYSTEM_JOBIDENTIFIER] --> [Stage_40af192c0a5e417e9c2998154b370a49_1_1.Phase_1.__default]
+				[SYSTEM_JOBNAME] --> [__default]
+				[SYSTEM_JOBPARALLELISMTAG] --> [Private]
+				[SYSTEM_JOBPOSITIONINPHASE] --> [1]
+				[SYSTEM_JOBTIMEOUT] --> [0]
+				[SYSTEM_PHASEATTEMPT] --> [1]
+				[SYSTEM_PHASEDISPLAYNAME] --> [Run on agent]
+				[SYSTEM_PHASEID] --> [d9dd4661-810a-5c2e-6fe1-d39c8b5c76a0]
+				[SYSTEM_PHASENAME] --> [Phase_1]
+				[SYSTEM_PIPELINESTARTTIME] --> [2022-04-22 06:19:49+00:00]
+				[SYSTEM_PLANID] --> [a2062316-f02c-46aa-82b1-17733cedc985]
+				[SYSTEM_SERVERTYPE] --> [Hosted]
+				[SYSTEM_STAGEATTEMPT] --> [1]
+				[SYSTEM_STAGEDISPLAYNAME] --> [Deploy env DEV]
+				[SYSTEM_STAGEID] --> [f5c461e1-7748-5797-2f72-af40aa4f43bd]
+				[SYSTEM_STAGENAME] --> [Stage_40af192c0a5e417e9c2998154b370a49_1_1]
+				[SYSTEM_TASKDEFINITIONSURI] --> [https://dev.azure.com/johnnykevinfalcones/]
+				[SYSTEM_TEAMFOUNDATIONCOLLECTIONURI] --> [https://dev.azure.com/johnnykevinfalcones/]
+				[SYSTEM_TEAMFOUNDATIONSERVERURI] --> [https://vsrm.dev.azure.com/johnnykevinfalcones/]
+				[SYSTEM_TEAMPROJECT] --> [DevOps]
+				[SYSTEM_TEAMPROJECTID] --> [40af192c-0a5e-417e-9c29-98154b370a49]
+				[SYSTEM_TIMELINEID] --> [a2062316-f02c-46aa-82b1-17733cedc985]
+				[SYSTEM_TOTALJOBSINPHASE] --> [1]
+				[SYSTEM_WORKFOLDER] --> [D:\a]
+2022-04-22T06:19:57.9178290Z Creating artifacts directory: D:\a\r1\a
+2022-04-22T06:19:57.9418812Z Created artifacts directory: D:\a\r1\a
+2022-04-22T06:19:57.9499196Z Download all required tasks.
+2022-04-22T06:19:57.9637509Z Downloading task: DownloadBuildArtifacts (0.200.1)
+2022-04-22T06:20:06.9855230Z Downloading task: AzureRmWebAppDeployment (4.198.0)
+2022-04-22T06:20:10.5591804Z Checking job knob settings.
+2022-04-22T06:20:10.5605744Z    Knob: AgentToolsDirectory = C:\hostedtoolcache\windows Source: ${AGENT_TOOLSDIRECTORY} 
+2022-04-22T06:20:10.5607405Z    Knob: AgentPerflog = C:\agents\perflog Source: ${VSTS_AGENT_PERFLOG} 
+2022-04-22T06:20:10.5611807Z Finished checking job knob settings.
+2022-04-22T06:20:10.7262555Z Start tracking orphan processes.
+2022-04-22T06:20:10.7414221Z ##[section]Finishing: Initialize job
+2022-04-22T06:20:10.7917301Z ##[section]Starting: Download artifact - _AspNetCore-App-CI - drop
+2022-04-22T06:20:10.9576764Z ==============================================================================
+2022-04-22T06:20:10.9577486Z Task         : Download build artifacts
+2022-04-22T06:20:10.9578801Z Description  : Download files that were saved as artifacts of a completed build
+2022-04-22T06:20:10.9580566Z Version      : 0.200.1
+2022-04-22T06:20:10.9581250Z Author       : Microsoft Corporation
+2022-04-22T06:20:10.9581932Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-build-artifacts
+2022-04-22T06:20:10.9582398Z ==============================================================================
+2022-04-22T06:20:15.2431254Z Downloading artifacts for build: 33
+2022-04-22T06:20:15.4629730Z Downloading items from container resource #/18736155/drop
+2022-04-22T06:20:15.4631364Z Downloading artifact drop from: https://dev.azure.com/johnnykevinfalcones//_apis/resources/Containers/18736155?itemPath=drop&isShallow=true&api-version=4.1-preview.4
+2022-04-22T06:20:19.3495636Z Downloading drop/API.zip to D:\a\r1\a\_AspNetCore-App-CI\drop\API.zip
+2022-04-22T06:20:19.3636324Z Downloading drop/apiweb_net_test.zip to D:\a\r1\a\_AspNetCore-App-CI\drop\apiweb_net_test.zip
+2022-04-22T06:20:19.6331322Z Downloaded drop/API.zip to D:\a\r1\a\_AspNetCore-App-CI\drop\API.zip
+2022-04-22T06:20:20.3024062Z Downloading drop/Web.zip to D:\a\r1\a\_AspNetCore-App-CI\drop\Web.zip
+2022-04-22T06:20:21.4646708Z Downloaded drop/Web.zip to D:\a\r1\a\_AspNetCore-App-CI\drop\Web.zip
+2022-04-22T06:20:21.7351710Z Downloaded drop/apiweb_net_test.zip to D:\a\r1\a\_AspNetCore-App-CI\drop\apiweb_net_test.zip
+2022-04-22T06:20:22.6381574Z Total Files: 3, Processed: 3, Skipped: 0, Failed: 0, Download time: 7.174 secs, Download size: 11.692MB
+2022-04-22T06:20:22.6815670Z Successfully downloaded artifacts to D:\a\r1\a\_AspNetCore-App-CI\
+2022-04-22T06:20:22.6852402Z ##[section]Finishing: Download artifact - _AspNetCore-App-CI - drop
+2022-04-22T06:20:22.6893473Z ##[section]Starting: Deploy Azure App Service - Project API
+2022-04-22T06:20:22.7073839Z ==============================================================================
+2022-04-22T06:20:22.7074242Z Task         : Azure App Service deploy
+2022-04-22T06:20:22.7075067Z Description  : Deploy to Azure App Service a web, mobile, or API app using Docker, Java, .NET, .NET Core, Node.js, PHP, Python, or Ruby
+2022-04-22T06:20:22.7075724Z Version      : 4.198.0
+2022-04-22T06:20:22.7075970Z Author       : Microsoft Corporation
+2022-04-22T06:20:22.7076289Z Help         : https://aka.ms/azureappservicetroubleshooting
+2022-04-22T06:20:22.7076662Z ==============================================================================
+2022-04-22T06:20:23.4684024Z Got service connection details for Azure App Service:'InterviewDevOpsDEV'
+2022-04-22T06:20:24.4303738Z Trying to update App Service Application settings. Data: {"WEBSITE_RUN_FROM_PACKAGE":"1"}
+2022-04-22T06:20:36.0261527Z Updated App Service Application settings and Kudu Application settings.
+2022-04-22T06:20:39.7736589Z Updated App Service Application settings and Kudu Application settings.
+2022-04-22T06:20:39.7739365Z Package deployment using ZIP Deploy initiated.
+2022-04-22T06:20:41.2317683Z Successfully deployed web package to App Service.
+2022-04-22T06:20:41.2323368Z NOTE: Run From Package makes wwwroot read-only, so you will receive an error when writing files to this directory.
+2022-04-22T06:21:15.4454143Z Successfully updated App Service configuration details
+2022-04-22T06:21:15.7110271Z App Service Application URL: http://interviewdevopsdev.azurewebsites.net
+2022-04-22T06:21:15.7262473Z ##[section]Finishing: Deploy Azure App Service - Project API
+2022-04-22T06:21:15.7388107Z ##[section]Starting: Deploy Azure App Service - Project WEB
+2022-04-22T06:21:15.7606874Z ==============================================================================
+2022-04-22T06:21:15.7607433Z Task         : Azure App Service deploy
+2022-04-22T06:21:15.7607939Z Description  : Deploy to Azure App Service a web, mobile, or API app using Docker, Java, .NET, .NET Core, Node.js, PHP, Python, or Ruby
+2022-04-22T06:21:15.7608444Z Version      : 4.198.0
+2022-04-22T06:21:15.7609529Z Author       : Microsoft Corporation
+2022-04-22T06:21:15.7610004Z Help         : https://aka.ms/azureappservicetroubleshooting
+2022-04-22T06:21:15.7610581Z ==============================================================================
+2022-04-22T06:21:16.4857506Z Got service connection details for Azure App Service:'InterviewDevOpsDEV'
+2022-04-22T06:21:17.6073944Z Trying to update App Service Application settings. Data: {"WEBSITE_RUN_FROM_PACKAGE":"1"}
+2022-04-22T06:21:17.8166192Z App Service Application settings are already present.
+2022-04-22T06:21:20.5801488Z Package deployment using ZIP Deploy initiated.
+2022-04-22T06:21:21.7905929Z Successfully deployed web package to App Service.
+2022-04-22T06:21:21.7906620Z NOTE: Run From Package makes wwwroot read-only, so you will receive an error when writing files to this directory.
+2022-04-22T06:21:22.6378488Z App Service Application URL: http://interviewdevopsdev.azurewebsites.net
+2022-04-22T06:21:22.6563253Z ##[section]Finishing: Deploy Azure App Service - Project WEB
+2022-04-22T06:21:22.6650475Z ##[section]Starting: Finalize Job
+2022-04-22T06:21:22.6687790Z Cleaning up task key
+2022-04-22T06:21:22.6689469Z Start cleaning up orphan processes.
+2022-04-22T06:21:22.6939218Z ##[section]Finishing: Finalize Job
+2022-04-22T06:21:22.7000971Z ##[section]Finishing: Run on agent
