@@ -18,7 +18,7 @@ namespace API.Controllers
         private readonly ILogger<HomeController> _logger;
         public ActionResult Index()
         {
-            return new OkObjectResult("Interview.DevOps.API v1 Kevin Falcones #{environment}#");
+            return new OkObjectResult("Interview.DevOps.API v1 Kevin Falcones Tienda Pago #{environment}#");
         }
 
         public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
